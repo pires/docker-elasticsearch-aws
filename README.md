@@ -1,6 +1,8 @@
 # docker-elasticsearch-aws
 Ready to use Elasticsearch + AWS plug-in Docker image.
 
+[![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-elasticsearch-aws/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-elasticsearch-aws)
+
 ## Current software
 
 * Oracle JRE 8 Update 45
