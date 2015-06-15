@@ -1,4 +1,4 @@
-FROM quay.io/pires/docker-elasticsearch:1.5.2
+FROM quay.io/pires/docker-elasticsearch:1.6.0
 
 MAINTAINER pjpires@gmail.com
 
@@ -6,5 +6,5 @@ MAINTAINER pjpires@gmail.com
 ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
 # Install Elasticsearch plug-ins
-RUN /elasticsearch/bin/plugin -i elasticsearch/elasticsearch-cloud-aws/2.5.1 \
+RUN /elasticsearch/bin/plugin -i elasticsearch/elasticsearch-cloud-aws/2.6.0 \
     && /elasticsearch/bin/plugin -i elasticsearch/marvel/latest
