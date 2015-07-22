@@ -7,7 +7,7 @@ Ready to use Elasticsearch + AWS plug-in Docker image.
 
 * Oracle JRE 8 Update 51
 * Elasticsearch 1.7.0
-* AWS plug-in 2.6.0
+* AWS plug-in 2.7.0
 
 ## Pre-requisites
 

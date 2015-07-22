@@ -6,5 +6,5 @@ MAINTAINER pjpires@gmail.com
 ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
 # Install Elasticsearch plug-ins
-RUN /elasticsearch/bin/plugin -i elasticsearch/elasticsearch-cloud-aws/2.6.0 \
+RUN /elasticsearch/bin/plugin -i elasticsearch/elasticsearch-cloud-aws/2.7.0 \
     && /elasticsearch/bin/plugin -i elasticsearch/marvel/latest
