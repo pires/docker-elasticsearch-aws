@@ -18,12 +18,12 @@ Ready to use Elasticsearch + AWS plug-in Docker image.
 You need a folder named `config` with your own version of `elasticsearch.yml`. You can add other Elasticserach configuration files to this folder, such as `logging.yml`.
 
 ```
-docker run --rm -v /path/to/config:/elasticsearch/config -e ES_HEAP_SIZE=512M quay.io/pires/docker-elasticsearch-aws:1.7.0
+docker run --rm -v /path/to/config:/elasticsearch/config -e ES_HEAP_SIZE=512M quay.io/pires/docker-elasticsearch-aws:1.7.0-2
 ```
 
 In case you want to specify a data folder so that Elasticsearch writes to storage outside the container, run
 ```
-docker run --rm -v /path/to/config:/elasticsearch/config -v /path/to/data_folder:/data -e ES_HEAP_SIZE=512M quay.io/pires/docker-elasticsearch-aws:1.7.0
+docker run --rm -v /path/to/config:/elasticsearch/config -v /path/to/data_folder:/data -e ES_HEAP_SIZE=512M quay.io/pires/docker-elasticsearch-aws:1.7.0-2
 ```
 
 **Attention**, change `ES_HEAP_SIZE` to match your environment resources.
