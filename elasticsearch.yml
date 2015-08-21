@@ -1,2 +1,29 @@
+cluster:
+  name: ${CLUSTER_NAME}
+
+node:
+  master: ${NODE_MASTER}
+  data: ${NODE_DATA}
+
 path:
+  data: /data/data
+  logs: /data/log
   plugins: /elasticsearch/plugins
+  work: /data/work
+
+bootstrap.mlockall: true
+
+http.enabled: ${HTTP_ENABLE}
+
+cloud:
+  aws:
+    access_key: ${AWS_KEY}
+    secret_key: ${AWS_SECRET}
+
+discovery:
+  type: ec2
+  ec2.tag:
+    ${TAG_KEY}: ${TAG_VALUE}
+  zen:
+    minimum_master_nodes: 3
+    ping.multicast.enabled: false
