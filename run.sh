@@ -12,3 +12,6 @@ export TAG_KEY=${TAG_KEY:-somekey}
 export TAG_VALUE=${TAG_VALUE:-somevalue}
 
 /elasticsearch/bin/elasticsearch
+
+# Copy run script
+COPY run.sh /
