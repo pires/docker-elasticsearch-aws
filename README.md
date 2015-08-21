@@ -27,7 +27,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws1.7.1-2
+	quay.io/pires/docker-elasticsearch-aws:1.7.1-2
 ```
 
 Ready to use node for cluster `myclustername`:
@@ -40,7 +40,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws1.7.1-2
+	quay.io/pires/docker-elasticsearch-aws:1.7.1-2
 ```
 
 Ready to use node for cluster `elasticsearch-default`, with 8GB heap allocated to Elasticsearch:
@@ -53,7 +53,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws1.7.1-2
+	quay.io/pires/docker-elasticsearch-aws:1.7.1-2
 ```
 
 **Master-only** node for cluster `elasticsearch-default`:
@@ -67,7 +67,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws1.7.1-2
+	quay.io/pires/docker-elasticsearch-aws:1.7.1-2
 ```
 
 **Data-only** node for cluster `elasticsearch-default`:
@@ -80,7 +80,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws1.7.1-2
+	quay.io/pires/docker-elasticsearch-aws:1.7.1-2
 ```
 
 **Client-only** node for cluster `elasticsearch-default`:
@@ -94,6 +94,6 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws1.7.1-2
+	quay.io/pires/docker-elasticsearch-aws:1.7.1-2
 ```
 
