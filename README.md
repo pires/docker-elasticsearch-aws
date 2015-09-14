@@ -6,13 +6,13 @@ Ready to use lean (211MB) Elasticsearch Docker image ready for using within AWS 
 
 ## Current software
 
-* Oracle JRE 8 Update 51
-* Elasticsearch 1.7.1
-* AWS plug-in 2.7.0
+* Oracle JRE 8 Update 60
+* Elasticsearch 1.7.2
+* AWS plug-in 2.7.1
 
 ## Pre-requisites
 
-* Docker 1.7.0+
+* Docker 1.7.1+
 * EC2 credentials for reading EC2 tags
 * EC2 tag key and tag value for identifying machines used in the cluster
 
@@ -27,7 +27,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:1.7.1-3
+	quay.io/pires/docker-elasticsearch-aws:1.7.2
 ```
 
 Ready to use node for cluster `myclustername`:
@@ -40,7 +40,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:1.7.1-3
+	quay.io/pires/docker-elasticsearch-aws:1.7.2
 ```
 
 Ready to use node for cluster `elasticsearch-default`, with 8GB heap allocated to Elasticsearch:
@@ -53,7 +53,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:1.7.1-3
+	quay.io/pires/docker-elasticsearch-aws:1.7.2
 ```
 
 **Master-only** node for cluster `elasticsearch-default`:
@@ -67,7 +67,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:1.7.1-3
+	quay.io/pires/docker-elasticsearch-aws:1.7.2
 ```
 
 **Data-only** node for cluster `elasticsearch-default`:
@@ -80,7 +80,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:1.7.1-3
+	quay.io/pires/docker-elasticsearch-aws:1.7.2
 ```
 
 **Client-only** node for cluster `elasticsearch-default`:
@@ -94,6 +94,5 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:1.7.1-3
+	quay.io/pires/docker-elasticsearch-aws:1.7.2
 ```
-

@@ -1,4 +1,4 @@
-FROM quay.io/pires/docker-elasticsearch:1.7.1-2
+FROM quay.io/pires/docker-elasticsearch:1.7.2
 
 MAINTAINER pjpires@gmail.com
 
@@ -6,7 +6,7 @@ MAINTAINER pjpires@gmail.com
 ADD do_not_use.yml /elasticsearch/config/elasticsearch.yml
 
 # Install Elasticsearch plug-ins
-RUN /elasticsearch/bin/plugin -i elasticsearch/elasticsearch-cloud-aws/2.7.0 \
+RUN /elasticsearch/bin/plugin -i elasticsearch/elasticsearch-cloud-aws/2.7.1 \
     && /elasticsearch/bin/plugin -i elasticsearch/marvel/latest
 
 # Override elasticsearch.yml config, otherwise plug-in install will fail
