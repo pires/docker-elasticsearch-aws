@@ -10,3 +10,8 @@ RUN /elasticsearch/bin/plugin install cloud-aws
 
 # Override elasticsearch.yml config, otherwise plug-in install will fail
 ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
+
+# Copy run script
+COPY run.sh /
+
+CMD ["/run.sh"]

@@ -22,6 +22,7 @@ Ready to use node for cluster `elasticsearch-default`:
 ```
 docker run --name elasticsearch \
 	--detach \
+	--privileged \
 	--volume /path/to/data_folder:/data \
 	-e AWS_KEY=xxxxxxxxxxxx \
 	-e AWS_SECRET=xxxxxxxxxxxx \
@@ -34,6 +35,7 @@ Ready to use node for cluster `myclustername`:
 ```
 docker run --name elasticsearch \
 	--detach \
+	--privileged \
 	--volume /path/to/data_folder:/data \
 	-e CLUSTER_NAME=myclustername \
 	-e AWS_KEY=xxxxxxxxxxxx \
@@ -47,6 +49,7 @@ Ready to use node for cluster `elasticsearch-default`, with 8GB heap allocated t
 ```
 docker run --name elasticsearch \
 	--detach \
+	--privileged \
 	--volume /path/to/data_folder:/data \
 	-e ES_HEAP_SIZE=8G \
 	-e AWS_KEY=xxxxxxxxxxxx \
@@ -60,6 +63,7 @@ docker run --name elasticsearch \
 ```
 docker run --name elasticsearch \
 	--detach \
+	--privileged \
 	--volume /path/to/data_folder:/data \
 	-e NODE_DATA=false \
 	-e HTTP_ENABLE=false \
@@ -73,7 +77,9 @@ docker run --name elasticsearch \
 **Data-only** node for cluster `elasticsearch-default`:
 ```
 docker run --name elasticsearch \
-	--detach --volume /path/to/data_folder:/data \
+	--detach \
+	--privileged \
+	--volume /path/to/data_folder:/data \
 	-e NODE_MASTER=false \
 	-e HTTP_ENABLE=false \
 	-e AWS_KEY=xxxxxxxxxxxx \
@@ -87,6 +93,7 @@ docker run --name elasticsearch \
 ```
 docker run --name elasticsearch \
 	--detach \
+	--privileged \
 	--volume /path/to/data_folder:/data \
 	-e NODE_MASTER=false \
 	-e NODE_DATA=false \
