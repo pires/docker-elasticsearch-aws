@@ -1,14 +1,14 @@
 # docker-elasticsearch-aws
 
-Ready to use lean (208MB) Elasticsearch Docker image ready for using within AWS EC2.
+Ready to use lean (209MB) Elasticsearch Docker image ready for using within AWS EC2.
 
 [![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-elasticsearch-aws/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-elasticsearch-aws)
 
 ## Current software
 
 * Oracle JRE 8 Update 66
-* Elasticsearch 2.0.0
-* [AWS plug-in](https://www.elastic.co/guide/en/elasticsearch/plugins/2.0/cloud-aws.html)
+* Elasticsearch 2.1.0
+* [AWS plug-in](https://www.elastic.co/guide/en/elasticsearch/plugins/current/cloud-aws.html)
 
 ## Pre-requisites
 
@@ -28,7 +28,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.0.0
+	quay.io/pires/docker-elasticsearch-aws:2.1.0
 ```
 
 Ready to use node for cluster `myclustername`:
@@ -42,7 +42,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.0.0
+	quay.io/pires/docker-elasticsearch-aws:2.1.0
 ```
 
 Ready to use node for cluster `elasticsearch-default`, with 8GB heap allocated to Elasticsearch:
@@ -56,7 +56,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.0.0
+	quay.io/pires/docker-elasticsearch-aws:2.1.0
 ```
 
 **Master-only** node for cluster `elasticsearch-default`:
@@ -71,7 +71,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.0.0
+	quay.io/pires/docker-elasticsearch-aws:2.1.0
 ```
 
 **Data-only** node for cluster `elasticsearch-default`:
@@ -86,7 +86,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.0.0
+	quay.io/pires/docker-elasticsearch-aws:2.1.0
 ```
 
 **Client-only** node for cluster `elasticsearch-default`:
@@ -101,5 +101,5 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.0.0
+	quay.io/pires/docker-elasticsearch-aws:2.1.0
 ```
