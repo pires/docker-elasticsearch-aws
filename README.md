@@ -7,7 +7,7 @@ Ready to use lean (214MB) Elasticsearch Docker image ready for using within AWS 
 ## Current software
 
 * Oracle JRE 8 Update 74
-* Elasticsearch 2.2.1
+* Elasticsearch 2.2.2
 * [AWS plug-in](https://www.elastic.co/guide/en/elasticsearch/plugins/current/cloud-aws.html)
 
 ## Pre-requisites
@@ -27,7 +27,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.2.1
+	quay.io/pires/docker-elasticsearch-aws:2.2.2
 ```
 
 Ready to use node for cluster `myclustername`:
@@ -41,7 +41,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.2.1
+	quay.io/pires/docker-elasticsearch-aws:2.2.2
 ```
 
 Ready to use node for cluster `elasticsearch-default`, with 8GB heap allocated to Elasticsearch:
@@ -55,7 +55,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.2.1
+	quay.io/pires/docker-elasticsearch-aws:2.2.2
 ```
 
 **Master-only** node for cluster `elasticsearch-default`:
@@ -70,7 +70,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.2.1
+	quay.io/pires/docker-elasticsearch-aws:2.2.2
 ```
 
 **Data-only** node for cluster `elasticsearch-default`:
@@ -85,7 +85,7 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.2.1
+	quay.io/pires/docker-elasticsearch-aws:2.2.2
 ```
 
 **Client-only** node for cluster `elasticsearch-default`:
@@ -100,5 +100,5 @@ docker run --name elasticsearch \
 	-e AWS_SECRET=xxxxxxxxxxxx \
 	-e TAG_KEY=xxxxxxxxxxxx \
 	-e TAG_VALUE=xxxxxxxxxxxx \
-	quay.io/pires/docker-elasticsearch-aws:2.2.1
+	quay.io/pires/docker-elasticsearch-aws:2.2.2
 ```
