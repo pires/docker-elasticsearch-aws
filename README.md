@@ -6,7 +6,7 @@ Ready to use lean (157MB) Elasticsearch Docker image ready for using within AWS 
 
 ## Current software
 
-* Oracle JRE 8 Update 92
+* OpenJDK JRE 8u92
 * Elasticsearch 2.3.2
 * [AWS plug-in](https://www.elastic.co/guide/en/elasticsearch/plugins/current/cloud-aws.html)
 
