@@ -26,4 +26,3 @@ discovery:
     ${TAG_KEY}: ${TAG_VALUE}
   zen:
     minimum_master_nodes: 3
-    ping.multicast.enabled: false
