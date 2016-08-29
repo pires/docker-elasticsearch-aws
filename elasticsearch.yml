@@ -32,7 +32,8 @@ discovery:
   ec2.tag:
     ${TAG_KEY}: ${TAG_VALUE}
   zen:
-    minimum_master_nodes: 3
+    minimum_master_nodes: ${NUMBER_OF_MASTERS}
+
 index:
     number_of_shards: ${NUMBER_OF_SHARDS}
     number_of_replicas: ${NUMBER_OF_REPLICAS}
