@@ -20,6 +20,7 @@ http:
   compression: true
   cors:
     enabled: ${HTTP_CORS_ENABLE}
+    allow-origin: ${HTTP_CORS_ALLOW_ORIGIN}
 
 cloud:
   aws:
@@ -32,3 +33,6 @@ discovery:
     ${TAG_KEY}: ${TAG_VALUE}
   zen:
     minimum_master_nodes: 3
+index:
+    number_of_shards: ${NUMBER_OF_SHARDS}
+    number_of_replicas: ${NUMBER_OF_REPLICAS}
